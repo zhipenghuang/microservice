@@ -1,0 +1,16 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: microservice-authority
+
+# 将配置中心注册到eureka实现高可用
+eureka:
+    instance:
+        statusPageUrlPath: /actuator/info
+        healthCheckUrlPath: /actuator/health
+    client:
+        serviceUrl:
+#            defaultZone: http://localhost:8761/eureka/
+                    # docker 部署开启
+            defaultZone: http://localhost:8761/eureka/
