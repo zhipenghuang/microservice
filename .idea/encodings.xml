@@ -2,6 +2,12 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-authority" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-control" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-modules" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-registration" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

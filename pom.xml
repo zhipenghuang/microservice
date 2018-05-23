@@ -11,6 +11,10 @@
         <module>microservice-registration</module>
         <module>microservice-config</module>
         <module>microservice-authority</module>
+        <module>microservice-common</module>
+        <module>microservice-modules</module>
+        <module>microservice-gateway</module>
+        <module>microservice-control</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -39,6 +43,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.14</version>
         </dependency>
     </dependencies>
 
