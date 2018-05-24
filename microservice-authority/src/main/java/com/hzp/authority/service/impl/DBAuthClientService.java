@@ -80,21 +80,21 @@ public class DBAuthClientService implements AuthClientService {
         return clients;
     }
 
-    @Override
-    @Scheduled(cron = "0 0/1 * * * ?")
-    public void registryClient() {
-        // 自动注册节点
-        discovery.getServices().forEach((name) ->{
-            Client client = new Client();
-            client.setName(name);
-            client.setCode(name);
-            Client dbClient = clientMapper.selectOne(client);
-            if(dbClient==null) {
-                client.setSecret(UUIDUtils.generateShortUuid());
-                clientMapper.insert(client);
-            }
-        });
-    }
+//    @Override
+//    @Scheduled(cron = "0 0/1 * * * ?")
+//    public void registryClient() {
+//        // 自动注册节点
+//        discovery.getServices().forEach((name) ->{
+//            Client client = new Client();
+//            client.setName(name);
+//            client.setCode(name);
+//            Client dbClient = clientMapper.selectOne(client);
+//            if(dbClient==null) {
+//                client.setSecret(UUIDUtils.generateShortUuid());
+//                clientMapper.insert(client);
+//            }
+//        });
+//    }
 
     private Client getClient(String clientId) {
         Client client = new Client();

@@ -24,7 +24,7 @@ public interface AuthClientService {
      */
     public List<String> getAllowedClient(String serviceId);
 
-    public void registryClient();
+//    public void registryClient();
 
     public void validate(String clientId, String secret) throws Exception;
 }

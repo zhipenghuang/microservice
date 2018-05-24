@@ -5,7 +5,7 @@ import com.hzp.authority.entity.Client;
 import tk.mybatis.mapper.common.Mapper;
 import java.util.List;
 
-@org.apache.ibatis.annotations.Mapper
+
 public interface ClientMapper extends Mapper<Client> {
 //    @Select(" SELECT\n" +
 //            "        client.CODE\n" +
@@ -19,5 +19,4 @@ public interface ClientMapper extends Mapper<Client> {
 
     List<Client> selectAuthorityServiceInfo(int clientId);
 
-    Client selectOne(Client client);
 }

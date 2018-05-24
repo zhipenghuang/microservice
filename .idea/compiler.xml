@@ -7,12 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="microservice-admin" />
         <module name="microservice-authority" />
         <module name="microservice-common" />
         <module name="microservice-config" />
         <module name="microservice-control" />
         <module name="microservice-gateway" />
-        <module name="microservice-modules" />
         <module name="microservice-registration" />
       </profile>
     </annotationProcessing>
